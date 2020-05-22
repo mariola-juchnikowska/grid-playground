@@ -25,7 +25,8 @@ body {
     grid-row-end: 3;
     /*grid-area:1/pierwsza/3/span3;
     grid-column:pierwsza/span3;
-    grid-row:1/3;*/
+    grid-row:1/3;
+    grid nie zastepuje flexboxa- pozycjonuje, ale go uzupelnia*/
 }
 
 .article {
