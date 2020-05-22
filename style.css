@@ -7,14 +7,7 @@ body {
     display: grid;
 }
 
-.main {
-    display: grid;
-    grid-template-areas: "header header header" "article . aside" "footer footer footer";
-    grid-template-columns: [pierwsza]1fr [druga]64px [trzecia]200px;
-    column-gap: 16px;
-    row-gap: 16px;
-    grid-template-rows: 100px;
-}
+.main {}
 
 .header {
     /*grid-area: header;*/
@@ -39,4 +32,32 @@ body {
 
 .footer {
     grid-area: footer;
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        background: red;
+    }
+    .mobile {
+        display: none;
+    }
+    .main {
+        display: grid;
+        grid-template-areas: "header header header" "article . aside" "footer footer footer";
+        grid-template-columns: [pierwsza]1fr [druga]64px [trzecia]200px;
+        column-gap: 16px;
+        row-gap: 16px;
+        grid-template-rows: 100px;
+        width: 770px;
+        margin: 16px auto;
+    }
+    .footer {
+        background: blue;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    body {
+        background: green;
+    }
 }
